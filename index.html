@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Chivo:ital@1&family=Inter&family=Julius+Sans+One&family=Montserrat:wght@200&family=Open+Sans&family=Orbitron:wght@500&family=Quicksand:wght@700&family=Raleway:wght@300&family=Roboto+Condensed&family=Roboto+Mono:wght@100&family=Roboto+Serif:ital,opsz,wght@1,8..144,100&family=Roboto:wght@400;900&family=Rubik:wght@300&display=swap');
+    .attribution { font-size: 12px; text-align: center;  }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
+
+    body{
+      font-family: 'Open Sans', sans-serif;
+      background-color:#F268A7 ;
+      background-image: url('/images/bg-desktop.svg');
+      overflow: hidden;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height:100vh;  
+      align-items: center;
+    }
+    .img1{
+      padding-top: 45px;
+      padding-bottom: 60px;
+    }
+    header{
+      padding-left: 5%;
+    }
+    .main{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      color: #fff;
+    }
+    p{
+      line-height: 1.5;
+    }
+    .text-container{
+      padding: 0 5%;
+      font-size: 16px;
+    }
+    footer{     
+      color: #fff;
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+    }
+    .img2{
+      padding-left: 5%;
+    }
+
+    button{
+      width: 170px;
+      height: 50px;
+      border-radius: 25px;
+      color: #F268A7;
+      font-size: 16px;
+      border: none;
+      box-shadow: 0 0 0.6em rgb(71, 71, 71);
+      margin-top: 25px;
+
+    }
+    button:hover{
+      background-color: #674BB1;
+      transform: scale(1.1);
+      color: #fff;
+    }
+    .logos{
+      margin-top: 50px;
+    }
+
+    .logos ul{
+      padding: 0;
+      display: flex;
+      align-items: flex-start;
+      list-style: none;
+      
+    }
+    li{
+      padding-right: 20px;
+    }
+
+
+    @media (max-width: 750px) {
+      body{
+        width: 100%;
+        background-image: url('/images/bg-mobile.svg');
+        background-size: contain;
+        align-items: center;
+      }
+      .main {
+        flex-direction: column;
+        align-items: center;
+        
+
+      }
+      .img2 {
+        padding-right: 6%;
+        width: 320px;
+      }
+      header{
+        padding-left: 5%;
+      }
+
+      header .img1{
+        width: 120px;
+      }
+      
+      .text-container{
+        padding: 0 7%;
+        text-align: center;
+        height: 400px;
+        
+      }
+      h1{
+        font-size: 28px;
+      }
+      p{
+        font-size: 17px;
+      }
+      .attribution {
+        font-size: 10px;
+      }
+      button{
+        margin: 0;
+        width: 255px;
+        font-size: 17px;
+      }
+
+      button:hover{
+      background-color: #674BB1;
+      transform: scale(1.1);
+      color: #fff;
+      }
+
+      ul{
+        margin: 0;
+        justify-content: center;
+      }
+
+    }
+  </style>
+</head>
+
+
+<body>
+  
+  <header>
+    <img class="img1" src="/images/logo.svg" alt="logo">
+  </header>
+  <main class="main">
+    <img class="img2 " src="/images/illustration-mockups.svg" alt="illustration-mockups">
+    <div class="text-container">
+      <h1>Build The Community Your Fans Will Love</h1>
+
+      <p> Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion. </p>
+      
+      <button>Register</button>
+
+      <div class="logos">
+        <ul>
+          <li><a href=""><img src="/images/facebook.svg" alt=""></a></li>
+          <li><a href=""><img src="/images/instagram.svg" alt=""></a></li>
+          <li><a href=""><img src="/images/twitter.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+
+   
+    
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/claudiane-costa-91a057219/">Claudiane Costa</a>.
+    </p>
+  </footer>
+</body>
+
+
+
+</html>
